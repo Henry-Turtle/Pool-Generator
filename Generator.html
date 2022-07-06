@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/pyodide/v0.20.0/full/pyodide.js"></script>
+        <script src = "backend.js"></script>
+    </head>
+    <body>
+        <input type = "radio"  name = "number" value = "12" id = "12" onclick = "update()">
+        <label for = "12">12 players</label>
+        <br>
+        <input type = "radio"  name = "number" value = "16" id = "16" onclick = "update()">
+        <label for = "16">16 players</label>
+        <br>
+        <input type = "radio"  name = "number" value = "20" id = "20" onclick = "update()">
+        <label for = "20">20 players</label>
+        <br>
+
+        <input type = "submit" id = "a" value = "Generate Pool" onclick="Generate()">
+
+        <div id = "Bracket">
+          <div id = "one"></div>
+          <div id = "two"></div>
+          <div id = "three"></div>
+        </div>
+    </body>
+
+</html>
