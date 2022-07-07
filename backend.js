@@ -11,7 +11,6 @@ function update(){
     let choice = document.getElementsByName("number");
     for(let i = 0; i<3;i+=1){
         if (choice[i].checked){
-            console.log(choice[i].value)
             document.getElementById("a").value = choice[i].value
         }}
 }
